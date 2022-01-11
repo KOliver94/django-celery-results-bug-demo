@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+celery = {extras = ["redis"],version = "==5.2.3"}
+django = "==3.2.11"
+djangorestframework = "==3.13.1"
+django-celery-results = {git = "https://github.com/celery/django-celery-results.git"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
